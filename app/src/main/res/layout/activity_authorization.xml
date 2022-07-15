@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #30455B"
+    android:backgroundTint="#30455B"
+    tools:context=".Authorization"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/rounded_edit_text"
+        android:backgroundTint="@null"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:isScrollContainer="false"
+        android:overScrollMode="never"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="282dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:password="true"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/img" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/et_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:clipToPadding="false"
+        android:foregroundGravity="top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#A7C1D8"
+            android:focusable="true"
+            android:hapticFeedbackEnabled="false"
+
+            android:insetLeft="6dp"
+
+            android:insetTop="4dp"
+            android:insetRight="8dp"
+            android:text="Войти"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textColorLink="#F2F4EA"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_registration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+
+            android:backgroundTint="#A7C1D8"
+            android:focusable="true"
+            android:hapticFeedbackEnabled="false"
+            android:insetRight="8dp"
+            android:text="Регистрация"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

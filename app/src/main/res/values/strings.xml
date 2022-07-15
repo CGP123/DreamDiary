@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DreamDiary</string>
+    <string name="authorization_text">Войти</string>
+    <string name="registration_text">Зарегистрироваться</string>
+</resources>
